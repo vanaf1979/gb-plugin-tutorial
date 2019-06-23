@@ -1,0 +1,13 @@
+.metabox-sidebar-content {
+  margin: 16px 16px 16px 16px;
+}
+
+.metabox-sidebar-content .metatags-browser-title-field {
+  margin: 0px 0px 16px 0px;
+}
+
+.metabox-sidebar-content .metatags-browser-title-field label.components-base-control__label {
+  font-size: 14px;
+  color: #007cba;
+}
+

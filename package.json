@@ -1,0 +1,48 @@
+{
+  "name": "silk",
+  "version": "0.7.0",
+  "description": "Silk wordpress seo plugin",
+  "author": "Vanaf1979.nl",
+  "homepage": "https://github.com/vanaf1979/silk#readme",
+  "contributors": [
+    {
+      "name": "Stephan Nijman",
+      "email": "wpseobox@gmail.com",
+      "url": "https://vanaf1979.nl"
+    }
+  ],
+  "license": "GPL-2.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanaf1979/silk.git"
+  },
+  "keywords": [
+    "Seo",
+    "Wordpress",
+    "Plugin"
+  ],
+  "bugs": {
+    "url": "https://github.com/vanaf1979/silk/issues"
+  },
+  "dependencies": {
+    "@yaireo/tagify": "^2.15.1",
+    "classnames": "^2.2.6",
+    "react-modal": "^3.8.1"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.0.0",
+    "copy-webpack-plugin": "^4.6.0",
+    "cssnext": "^1.8.4",
+    "laravel-mix": "^4.0.14",
+    "purecss": "^1.0.0",
+    "sass": "^1.16.1",
+    "sass-loader": "^7.1.0",
+    "source-map": "^0.7.3"
+  }
+}
