@@ -1,11 +1,22 @@
+/**
+ * External dependencies.
+ */
 import React from 'react'
 
+/**
+ * WordPress dependencies.
+ */
 const { __ } = wp.i18n;
 const { compose } = wp.compose;
 const { withDispatch, withSelect } = wp.data;
 const { RadioControl } = wp.components;
 
 
+/**
+ * Meta robots input component.
+ *
+ * @since 1.0.0
+ */
 class MetaRobotsField extends React.Component {
     
     constructor() {

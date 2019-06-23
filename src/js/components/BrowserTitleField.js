@@ -1,11 +1,22 @@
+/**
+ * External dependencies.
+ */
 import React from 'react'
 
+/**
+ * WordPress dependencies.
+ */
 const { __ } = wp.i18n;
 const { compose } = wp.compose;
 const { withDispatch, withSelect } = wp.data;
 const { TextControl } = wp.components;
 
 
+/**
+ * Browser title input component.
+ *
+ * @since 1.0.0
+ */
 class BrowserTitleField extends React.Component {
     
     constructor() {

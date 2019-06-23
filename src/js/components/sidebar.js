@@ -30,8 +30,6 @@ class Sidebar extends React.Component {
 
         super()
 
-        this.state = { }
-
     }
 
 
