@@ -128,7 +128,7 @@ class MetaTags {
 
         \add_action(
             'after_setup_theme',
-            array( $this , 'add_theme_support' ),
+            array( $this , 'add_title_theme_support' ),
             1
         );
 
@@ -222,7 +222,7 @@ class MetaTags {
 
 
     /**
-     * add_theme_support.
+     * add_title_theme_support.
      *
      * Add theme support for the title tag.
      * 
@@ -231,7 +231,7 @@ class MetaTags {
      * @access public
      * @return void
      */
-    public function add_theme_support( ) {
+    public function add_title_theme_support() {
         
         \add_theme_support( 'title-tag' );
 
@@ -239,17 +239,17 @@ class MetaTags {
 
 
     /**
-     * add_seabox_title_to_head.
+     * add_title_to_head.
      *
      * Add a title tag to the head.
      *
      * @uses get_post_meta() https://developer.wordpress.org/reference/functions/get_post_meta/
      * 
      * @access public
-     * @param String $title
-     * @return String
+     * @param string $title
+     * @return string
      */
-    public function add_title_to_head( String $title ) : String {
+    public function add_title_to_head( String $title ) : string {
 
         global $post;
 

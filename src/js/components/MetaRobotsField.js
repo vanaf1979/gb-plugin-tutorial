@@ -36,10 +36,10 @@ class MetaRobotsField extends React.Component {
                     label={__("Robots", "metatags")}
                     selected={ this.props.metaFieldValue ? this.props.metaFieldValue : 'Index / Follow' }
                     options={ [
-                        { label: 'Index / Follow', value: 'Index / Follow' },
-                        { label: 'Index / NoFollow', value: 'Index / NoFollow' },
-                        { label: 'NoIndex / NoFollow', value: 'NoIndex / NoFollow' },
-                        { label: 'NoIndex / Follow', value: 'NoIndex / Follow' },
+                        { label: 'Index, Follow', value: 'index, follow' },
+                        { label: 'Index, NoFollow', value: 'index, nofollow' },
+                        { label: 'NoIndex, NoFollow', value: 'noindex, nofollow' },
+                        { label: 'NoIndex, Follow', value: 'noindex, follow' },
                     ] }
                     onChange={this.props.setMetaFieldValue}
                 />

@@ -115,6 +115,13 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
+/**
+ * External dependencies.
+ */
+
+/**
+ * WordPress dependencies.
+ */
 
 var __ = wp.i18n.__;
 var compose = wp.compose.compose;
@@ -122,6 +129,11 @@ var _wp$data = wp.data,
     withDispatch = _wp$data.withDispatch,
     withSelect = _wp$data.withSelect;
 var TextControl = wp.components.TextControl;
+/**
+ * Browser title input component.
+ *
+ * @since 1.0.0
+ */
 
 var BrowserTitleField =
 /*#__PURE__*/
@@ -197,6 +209,13 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
+/**
+ * External dependencies.
+ */
+
+/**
+ * WordPress dependencies.
+ */
 
 var __ = wp.i18n.__;
 var compose = wp.compose.compose;
@@ -204,6 +223,11 @@ var _wp$data = wp.data,
     withDispatch = _wp$data.withDispatch,
     withSelect = _wp$data.withSelect;
 var TextareaControl = wp.components.TextareaControl;
+/**
+ * Meta description input component.
+ *
+ * @since 1.0.0
+ */
 
 var MetaDescriptionField =
 /*#__PURE__*/
@@ -279,6 +303,13 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
+/**
+ * External dependencies.
+ */
+
+/**
+ * WordPress dependencies.
+ */
 
 var __ = wp.i18n.__;
 var compose = wp.compose.compose;
@@ -286,6 +317,11 @@ var _wp$data = wp.data,
     withDispatch = _wp$data.withDispatch,
     withSelect = _wp$data.withSelect;
 var RadioControl = wp.components.RadioControl;
+/**
+ * Meta robots input component.
+ *
+ * @since 1.0.0
+ */
 
 var MetaRobotsField =
 /*#__PURE__*/
@@ -307,17 +343,17 @@ function (_React$Component) {
         label: __("Robots", "metatags"),
         selected: this.props.metaFieldValue ? this.props.metaFieldValue : 'Index / Follow',
         options: [{
-          label: 'Index / Follow',
-          value: 'Index / Follow'
+          label: 'Index, Follow',
+          value: 'index, follow'
         }, {
-          label: 'Index / NoFollow',
-          value: 'Index / NoFollow'
+          label: 'Index, NoFollow',
+          value: 'index, nofollow'
         }, {
-          label: 'NoIndex / NoFollow',
-          value: 'NoIndex / NoFollow'
+          label: 'NoIndex, NoFollow',
+          value: 'noindex, nofollow'
         }, {
-          label: 'NoIndex / Follow',
-          value: 'NoIndex / Follow'
+          label: 'NoIndex, Follow',
+          value: 'noindex, follow'
         }],
         onChange: this.props.setMetaFieldValue
       }));
@@ -410,13 +446,9 @@ function (_React$Component) {
   _inherits(Sidebar, _React$Component);
 
   function Sidebar() {
-    var _this;
-
     _classCallCheck(this, Sidebar);
 
-    _this = _possibleConstructorReturn(this, _getPrototypeOf(Sidebar).call(this));
-    _this.state = {};
-    return _this;
+    return _possibleConstructorReturn(this, _getPrototypeOf(Sidebar).call(this));
   }
 
   _createClass(Sidebar, [{
