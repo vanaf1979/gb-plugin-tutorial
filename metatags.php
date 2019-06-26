@@ -233,7 +233,7 @@ class MetaTags {
      */
     public function add_theme_support( ) {
         
-        add_theme_support( 'title-tag' );
+        \add_theme_support( 'title-tag' );
 
     }
 
@@ -253,7 +253,7 @@ class MetaTags {
 
         global $post;
 
-        $title = trim( get_post_meta( $post->ID , 'metatags_browser_title' , true ) );
+        $title = \trim( \get_post_meta( $post->ID , 'metatags_browser_title' , true ) );
 
         return $title > '' ? $title : $post->post_title;
         
@@ -283,7 +283,7 @@ class MetaTags {
 
             }
             
-            $value = trim( get_post_meta( $post->ID , $value , true ) );
+            $value = \trim( \get_post_meta( $post->ID , $value , true ) );
 
             echo "\t<meta name=\"{$key}\" content=\"{$value}\" />\n";
 
