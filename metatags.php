@@ -37,7 +37,7 @@ class MetaTags {
      * @var array $pluginname
      */
     private static $pluginslug = 'metatags';
-
+    
 
     /**
      * WordPress post meta fields.
@@ -52,11 +52,11 @@ class MetaTags {
 
 
     /**
-     * Gutenberg dependancies.
+     * Gutenberg dependencies.
      *
-     * @var array $dependancies
+     * @var array $dependencies
      */
-    private $dependancies = array(
+    private $dependencies = array(
         'wp-plugins',
         'wp-edit-post',
         'wp-element',
@@ -186,7 +186,7 @@ class MetaTags {
         \wp_enqueue_script(
             $this->pluginslug . '-scripts',
             plugin_dir_url( __FILE__ ) . 'dist/js/metatags.js',
-            $this->dependancies,
+            $this->dependencies,
             '1.0.0',
             'all'
         );

@@ -34,7 +34,7 @@ class MetaRobotsField extends React.Component {
 
                <RadioControl
                     label={__("Robots", "metatags")}
-                    selected={ this.props.metaFieldValue ? this.props.metaFieldValue : 'Index / Follow' }
+                    selected={ this.props.metaFieldValue ? this.props.metaFieldValue : 'index, follow' }
                     options={ [
                         { label: 'Index, Follow', value: 'index, follow' },
                         { label: 'Index, NoFollow', value: 'index, nofollow' },

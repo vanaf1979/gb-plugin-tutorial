@@ -341,7 +341,7 @@ function (_React$Component) {
         className: "metatags-browser-title-field"
       }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(RadioControl, {
         label: __("Robots", "metatags"),
-        selected: this.props.metaFieldValue ? this.props.metaFieldValue : 'Index / Follow',
+        selected: this.props.metaFieldValue ? this.props.metaFieldValue : 'index, follow',
         options: [{
           label: 'Index, Follow',
           value: 'index, follow'
